@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport"
+        content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/iyengar.style.css" type="text/css">
+    <title>iyengar</title>
+</head>
+
+<body>
+    <!-- View change section-->
+    <div class='view'>
+        <table>
+            <tr>
+                <td><a href="yoga.index.html" title="Широкая версия сайта"><span class="fa fa-desktop"></span></a></td>
+                <td><span class="fa fa-mobile" onclick="mobileView()"></span></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="mobile-view">
+        <div></div>
+        <iframe src="yoga-mobile.index.html"></iframe>
+    </div>
+    
+    <div class='desktop-view'>
+        <div class="fon">
+            <!--Heder section-->
+            <header>
+                <!--Mobile menu-->
+                <div class='menu-mobile'>
+                    <a href="yoga.index.html" title="На главную страницу">Главная</a>
+                    <a href="yoga.index.html#about-me-section" title="К разделу Обо мне" onclick='menuMobileHide()'>Обо мне</a>
+                    <a href="yoga.index.html#classes-section" title="К разделу" onclick='menuMobileHide()'>Занятия</a>
+                    <a href="online_appointment.index.html" title="На страницу Онлайн-запись">Онлайн-запись</a>
+                    <a href="yoga.index.html#contacts-section" title="К разделу Контакты">Контакты</a>
+                </div>
+
+                <!--Navigation section-->
+                <nav class='navmenu' role="navigation">
+                    <a href="yoga.index.html" title="На главную страницу"><span data-hover="Главная">Главная</span></a>
+                    <a href="yoga.index.html#about-me-section" title="К разделу Обо мне"><span data-hover="Обо мне">Обо мне</span></a>
+                    <a href="yoga.index.html#classes-section" title="К разделу выбора формата занятий"><span
+                            data-hover="Занятия">Занятия</span></a>
+                    <a href="online_appointment.index.html" title="На страницу Онлайн-запись"><span
+                            data-hover="Онлайн&hyphen;запись">Онлайн-запись</span></a>
+                    <a href="yoga.index.html#contacts-section" title="К разделу Контакты"><span
+                            data-hover="Контакты">Контакты</span></a>
+                </nav>
+                <div class='social'>
+                    <a href="https://vk.com/" target="_blank"><span class="fa fa-vk fa-2x"></span></a>
+                    <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook fa-2x"></span></a>
+                    <a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram fa-2x"></span></a>
+                </div>
+                <!--Menu button section-->
+                <div class="menubutton">
+                    <a class='menu-btn' href="#" title="Навигация по сайту" onclick='menuMobileActive()'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+            </div>
+            </header>
+
+            <!--Main section-->
+            <div class='main-section'>
+                <!--Price section-->
+                <div class="price">
+                    <h1>Айенгар</h1>
+                    <table>
+                        <tr>
+                            <td>1 ч.</td>
+                            <td>25 BYN</td>
+                        </tr>
+                    </table>
+                    <div class="sign-up-iyengar"><a href="/iyengarappointment.index.html" alt="записаться">Записаться</a></div>
+                </div>
+                <!--Description section-->
+                <div class="description">
+                    <p> Йога Айенгара &ndash; или классическая йога &ndash; самая мягкая, спокойная, безопасная и наиболее адаптирована для современной
+                    жизни. Получила признание за точность и внимание к деталям. В ходе занятий учитываются индивидуальные особенности
+                    строения тела и уровень его подготовленности. Нагрузка и ее правильное распределение обеспечивается и регулируется с
+                    особым вниманием, с использованием специальных приспособлений&colon; подушки, валики, одеяла, которые подкладываются под
+                    спину, бедра, голову, ноги, чтобы практика была максимально комфортной и ученики могли как можно лучше выполнить асану.
+                    При регулярной практике это позволяет идти от простого к сложному, совершать усилия, чтобы стать лучше.</p>
+                    
+                    <p>Определения ровности и выравнивания тела в асане являются основными в йоге Айенгара, потому что гармонизируется тело не
+                    только на физическом уровне. Со временем изменения начинают оказывать влияние на психо-эмоциональное состояние и ум.
+                    Постоянная и внимательная практика способствует достижению любых жизненных целей, от улучшения состояния здоровья,
+                    настроения и внешности, отношения с окружающими людьми, до гармоничного развития личности в целом. Сознательная
+                    трансформация тела в сочетании с правильным направлением ума приводит к личностным изменениям. Меняется мироощущение
+                    человека. Приходит зрелость поведения и поступков.С практикой, состояние покоя и гармонии остается устойчивым. Люди,
+                    которые начинают заниматься йогой, становятся лучше, позитивно меняется их жизнь.</p>
+                    <div class="foto-iyengar"></div>
+                </div>
+
+                <!--Ccontacts section-->
+                <div class="contacts">
+                    <h2>Контакты</h2>
+                    <p>info@mysite.by <br>+375 (29) 000-00-00
+                    </p>
+                </div>
+            </div>   
+
+            <!--Footer section-->
+            <footer>
+                <p>&copy;2022 Светлана Щерба</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+    <script type='text/javascript' src='script/yoga.script.js'></script>
+
+</body>
+
+</html>

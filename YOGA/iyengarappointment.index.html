@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport"
+        content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/arappointment.style.css" type="text/css">
+    <title>iyengar_appointment</title>
+</head>
+
+<body>
+    <!-- View change section-->
+    <div class='view'>
+        <table>
+            <tr>
+                <td><a href="yoga.index.html" title="Широкая версия сайта"><span class="fa fa-desktop"></span></a></td>
+                <td><span class="fa fa-mobile" onclick="mobileView()"></span></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="mobile-view">
+        <div></div>
+        <iframe src="yoga-mobile.index.html"></iframe>
+    </div>
+    
+    <div class='desktop-view'>
+
+        <div class="fon">
+            <!--Heder section-->
+            <header>
+                <!--Mobile menu-->
+                <div class='menu-mobile'>
+                    <a href="yoga.index.html" title="На главную страницу">Главная</a>
+                    <a href="yoga.index.html#about-me-section" title="К разделу Обо мне" onclick='menuMobileHide()'>Обо мне</a>
+                    <a href="yoga.index.html#classes-section" title="К разделу" onclick='menuMobileHide()'>Занятия</a>
+                    <a href="online_appointment.index.html" title="На страницу Онлайн-запись">Онлайн-запись</a>
+                    <a href="yoga.index.html#contacts-section" title="К разделу Контакты">Контакты</a>
+                </div>
+
+                <!--Navigation section-->
+                <nav class='navmenu' role="navigation">
+                    <a href="yoga.index.html" title="На главную страницу"><span data-hover="Главная">Главная</span></a>
+                    <a href="yoga.index.html#about-me-section" title="К разделу Обо мне"><span data-hover="Обо мне">Обо мне</span></a>
+                    <a href="yoga.index.html#classes-section" title="К разделу выбора формата занятий"><span
+                            data-hover="Занятия">Занятия</span></a>
+                    <a href="online_appointment.index.html" title="На страницу Онлайн-запись"><span
+                            data-hover="Онлайн&hyphen;запись">Онлайн-запись</span></a>
+                    <a href="yoga.index.html#contacts-section" title="К разделу Контакты"><span
+                            data-hover="Контакты">Контакты</span></a>
+                </nav>
+                <div class='social'>
+                    <a href="https://vk.com/" target="_blank"><span class="fa fa-vk fa-2x"></span></a>
+                    <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook fa-2x"></span></a>
+                    <a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram fa-2x"></span></a>
+                </div>
+                <!--Menu button section-->
+                <div class="menubutton">
+                    <a class='menu-btn' href="#" title="Навигация по сайту" onclick='menuMobileActive()'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </header>
+
+        
+            <div class='container2'>
+                <div class='container1'>
+                    <div class="comeback"><a href="online_appointment.index.html">&lt; Назад</a></div>
+                    
+                    <div class="name">
+                        <h1>Айенгар</h1>
+                        <p>Посмотрите календарь и запишитесь на удобные дату и время</p>
+                    </div>
+                </div>
+                
+                <div class="appointment">
+                    <div>
+                        <p>Выберите дату и время</p>
+                        <time datetime='GMT+3'>Минск, стандартное время (GMT+3) </time>
+                    </div>
+
+                    <div>
+                        <div class="calendar">
+                            <thead>
+                            <table id="calendar">
+                                <tr>
+                                    <td>&lang;</td>
+                                    <td colspan="5"> Июль 2022</td>   
+                                    <td>&rang;</td>
+                                </tr>
+                                <tr>  
+                                    <td>Пн</td>
+                                    <td>Вт</td>
+                                    <td>Ср</td>
+                                    <td>Чт</td>
+                                    <td>Пт</td>
+                                    <td>Сб</td>
+                                    <td>Вс</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="another-month-day">27</td>
+                                    <td class="another-month-day">28</td>
+                                    <td class="another-month-day">29</td>
+                                    <td class="another-month-day">30</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+
+                                    <tr>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                </tr>
+
+                                <tr>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                </tr>
+
+                                <tr> 
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="today">25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                </tr>
+                    
+                                <tr class="another-month-day">
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="schedule">
+                            <p>понедельник, 25 июля</p>
+                            <div class="schedule1" >
+                                <div tabindex="0">10:00</div>
+                                <div tabindex="0">10:30</div>
+                                <div tabindex="0">11:00</div>
+                                <div tabindex="0">11:30</div>
+                                <div tabindex="0">12:00</div>
+                                <div tabindex="0">12:30</div>
+                                <div tabindex="0">13:00</div>
+                                <div tabindex="0">13:30</div>
+                                <div tabindex="0">14:00</div>
+                                <div tabindex="0">14:30</div>
+                            </div>
+                            <input type=radio class='SReadMoreRadio' name=sessions id=sessions1 value=1>
+                            <label for=sessions1>показать все сессии</label>
+                            <div class='schedule2'>
+                                <div tabindex="0">15:00</div>
+                                <div tabindex="0">15:30</div>
+                                <div tabindex="0">16:00</div>
+                                <div tabindex="0">16:30</div>
+                                <div tabindex="0">17:00</div>
+                            </div>
+                            <input type=radio class='SReadMoreRadio' name=sessions id=sessions2 checked value=2>
+                            <label for=sessions2>скрыть</label>
+
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="info">
+                    <h2>Информация о записи</h2>
+                    <p>Айенгар<br>1 ч.<br>25 BYN</p>
+                    <a href='yoga-payment.index.html' title="Перейти на страницу оплаты">Дальше</a>
+                </div>
+                    
+            </div>
+            
+            <!--Footer section-->
+            <footer>
+                <p>&copy;2022 Светлана Щерба</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+    <script type='text/javascript' src='script/yoga.script.js'></script>
+
+</body>
+
+</html>

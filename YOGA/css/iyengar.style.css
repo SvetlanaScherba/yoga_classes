@@ -1,0 +1,130 @@
+
+@media all and (max-width: 750px) {
+    div.fon{
+        top: 0;
+    }
+    .navmenu {
+        display: none;
+    }
+
+    div.foto-iyengar {
+            margin: -35px 0 0 0;
+    }
+    
+    div.description {
+            padding: 0;
+    }
+}
+
+
+.fon {
+    position: relative;
+    top: 64px;
+    background-color: #FFFFFF;
+}
+
+/*Main content*/
+.main-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Price*/
+.price {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+}
+
+h1{
+    color: black;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 80px 0 40px 0;
+}
+
+.price table {
+    border-collapse: collapse;
+}
+
+.price td {
+border: 1px solid lightgrey;
+padding: 20px;
+}
+
+.sign-up-iyengar {
+    background-color: #5FC6E3;
+    width: 165px;
+    height: 40px;
+    margin: 23px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    transition-duration: 1s;
+}
+
+.sign-up-iyengar a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.sign-up-iyengar:hover {
+    background-color: #388196;
+}
+
+/*Description*/
+.description {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3B4157;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.description p:first-of-type {
+    border-top: 1px solid lightgrey;
+    padding: 30px 0 0 0; 
+}
+
+
+.foto-iyengar {
+    background: url('../img/iyengar1.jpg') no-repeat;
+    width: 100%;
+    height: 394px;
+    background-position: center;        
+    background-size: contain;
+}
+
+.contacts h2 {
+    margin: 40px 0 20px 0;
+    color: black;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+}
+
+.contacts p {
+    color: #3B4157;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    }
+
+/*Footer*/
+footer {
+    margin: 85px 0 25px 0;
+}

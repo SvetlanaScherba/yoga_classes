@@ -1,0 +1,260 @@
+@media all and (max-width: 750px) {
+    div.fon {
+        top:0;
+    }
+
+    div.navmenu {
+        display: none;
+    }
+
+    form > div{
+        flex-direction: column!important;
+    }
+
+    textarea {
+        width: 90vw!important;
+    }
+
+    form input {
+    width: 100%!important;
+    }
+
+    div.info {
+        margin: 50px 0;
+        width: 100%px;
+    }
+
+    div.payment-message {
+        width: 100%;
+        left:0;
+    }
+
+}
+
+
+.fon {
+    position: relative;
+    top: 64px;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.container {
+   max-width: fit-content;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.container >div:last-of-type{
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.customer-data, .info  {
+    display: inline-block;
+    vertical-align: top;
+
+}
+.customer-data > p:first-child, .info h2 {
+    margin: 0;
+    font-family: 'Charis SIL', serif;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 0;
+    text-align: left;
+}
+
+
+.customer-data > p:last-of-type, form, .info  p:first-of-type, .info p:nth-of-type(3), .info span {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #3B4157;
+    text-align: left;
+}
+
+.info p:nth-child(3){
+    border-bottom: 1px solid lightgrey;
+    padding: 0 0 25px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #3B4157;
+    text-align: left;
+}
+
+.info {
+    width:330px;
+    margin-left: 100px;
+}
+
+.info div {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    line-height: 3;
+}
+
+form > div {
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    width: 330px;
+    height: 45px;
+    border-radius: 0;
+    border: 1px solid #3B4157;
+    box-sizing: border-box;
+}
+input:nth-child(3) {
+    width: 690px;
+    height: 45px;
+    border-radius: 0;
+    border: 1px solid #3B4157;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+    height: 90px;
+    width: 690px;
+    border: 1px solid #3B4157;
+    border-radius: 0;
+    margin: 7px 0 0 0;
+    padding: 0 0 0 20px;
+    font-family: 'Playfair Display', serif;
+    font-style: Italic;
+    color: #3B4157;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.info input {
+    text-decoration: none;
+    border: none;
+    background-color: #5FC6E3;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1s;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.info input:hover {
+    background-color: #388196;
+}
+
+form input:focus,
+form textarea:focus,
+form input:hover,
+form textarea:hover {
+    border: 2px solid #3B4157;
+}
+
+/*Back button */
+.comeback {
+    text-align: left;
+    margin: 40px 0;
+}
+.comeback a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #3B4157;
+}
+
+/* Payment message (Сообщение, которое выводится на экран после нажатия кнопки "Оплатить" */
+.modalDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    z-index: 15;
+    display: none;
+    background: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    transition-duration: 1s;
+}
+
+.modalDialog p:first-of-type {
+    color: black;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 100px 70px 40px 70px;
+    text-align: center;
+    margin: 0;
+}
+
+.modalDialog p:last-of-type{
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 70px 20px 70px;
+    text-align: center;
+    margin: 0;
+}
+
+.modalDialog > div {
+    width: 700px;
+    position: relative;
+    margin: 10% auto;
+    font-style: normal;
+    color: black;
+    font-size: 50px;
+    border-radius: 10px;
+    background: #fff;
+    
+}
+
+.modalDialog input {
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    transition-duration: 1s;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 0 35px 0;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.close :hover, .modalDialog input:hover {
+    cursor: pointer;
+}
+
+
+/*Footer*/
+footer {
+    margin: 100px 0 0 0;
+}

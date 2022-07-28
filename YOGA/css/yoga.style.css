@@ -1,0 +1,491 @@
+@media all and (max-width: 750px) {
+    section.about-me-section p, section.reviews-section p {
+        padding: 30px 10px;
+    }
+   section.top-foto-section, div.second-foto-section, div.third-foto-section, div.last-foto-section {
+        background-attachment: scroll;
+    }
+    section.top-foto-section div {
+        top: 80px;
+    }
+
+    section.top-foto-section h1 {
+        display: block;
+        text-align: center;
+        top: 80px;
+        font-size: 40px;
+    }
+
+    section.top-foto-section {
+        max-height: 300px!important;
+        
+    }
+    div.second-foto-section, div.third-foto-section  {
+        min-height: 300px;
+    } 
+    div.classes-section {
+       background-image: none;
+    }
+
+    div.group-classes-section, div.personal-classes-section {
+            width: 100%;
+            margin: 0 0 20px 0;
+    }
+
+    div.last-foto-section {
+        min-height: 650px;
+        background-position:-500px ;}
+
+    section.contacts-section {
+        width: 100%;
+    }
+    
+}
+
+
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px lightgrey inset;
+    position: relative;
+    top: 64px;
+}
+
+
+
+
+
+/*Navbar (Боковая фиксированная панель навигации*/
+.navbar {
+    position: fixed;
+    z-index: 20;
+    right: 15px;
+    top: calc(50%);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 100px 30px;
+    grid-template-rows:  repeat(5, 38px);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #5FC6E3;
+}
+
+.navbar a {
+    display: block;
+    z-index: 20;
+    color: #5FC6E3;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 3px solid #5FC6E3;
+}
+
+.navbar a:hover {
+    background-color: #5FC6E3;
+}
+
+
+/*Main content*/
+.top-foto-section {
+    margin-top:-2px;
+    position: relative;
+    background: url('../img/yoga2.jpg');
+    width: 100%;
+    min-height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+/*Добавление узора поверх первого фото*/
+.top-foto-section div {
+    width: 100px;
+    position: relative;
+    top: 180px;
+    left: calc(50% - 50px);
+    z-index: 5;
+    margin: 0;
+}
+
+/*Затемнение первого фото*/
+.top-foto-section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    height: 614px;
+    z-index: 2;
+}
+
+.top-foto-section h1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    top: 170px;
+    color: #FFFFFF;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.top-foto-section span {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+/*Second foto*/
+.second-foto-section {
+    background: url('../img/yoga_w.jpg');
+    width: 100%;
+    min-height: 650px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/*Third foto*/
+.third-foto-section {
+    background: url('../img/yoga_h.jpg');
+    width: 100%;
+    min-height: 650px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*About me*/
+.about-me-section {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0 0 20px lightgrey inset;
+    background-color: #FFFFFF;
+}
+
+.about-me-section p  {
+    padding: 30px 200px 100px 200px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3B4157;
+}
+
+.about-me-section h2, .contacts-section h2 {
+    color: #5FC6E3;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 100px 0 0 0;
+    text-align: center;
+    margin: 0;
+}
+
+/*Classes*/
+.classes-section {
+    min-height: auto;
+    position: relative;
+    background-image: url('../img/top-pattern.png'), url('../img/bottom-pattern.png') ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 132% -12%, -100px 300px;
+    background-attachment: fixed;
+    background-color: #E2F3F8;
+    
+}
+
+.classes-section h2 {
+    color: #5FC6E3;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 100px 0 0 0;
+    text-align: center;
+    margin: 0;
+    }
+
+.all-classes-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 50px 0;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.classes-section p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 40px 0;
+    color: #3B4157;
+}
+
+.group-classes-section, .personal-classes-section {
+    margin: 0 30px 20px 0;
+    display: block;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    position: relative;
+}
+
+
+.all-classes-section a {
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.group-classes-section a, .personal-classes-section a {
+    background-color: #5FC6E3;
+    width: 180px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-classes-section a:hover, .personal-classes-section a:hover{
+    background-color: #388196;
+    transition-duration: 1s;
+}
+
+.group-classes-section h3, .personal-classes-section h3 {
+    color: #5FC6E3;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0 40px 0;
+}
+
+/*Reviews*/
+.reviews-section {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px lightgrey inset;
+}
+
+.reviews-section p {
+    padding: 0 200px 0 200px;
+    margin: -50px 0 50px 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3B4157;
+}
+
+.reviews-section figure {
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.reviews-section img {
+    width: 160px;
+    height: 160px;
+}
+
+.reviews-section figcaption {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #5FC6E3;
+    padding: 30px 0;
+}
+
+.reviews-section h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #5FC6E3;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 160px;
+    text-align: center;
+    padding: 50px 0 0 0;
+    margin: 0;
+}
+
+
+/*Last foto*/
+.last-foto-section {
+    background: url('../img/stone.jpg');
+    width: 100%;
+    min-height: 700px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: static;
+}
+
+/*Contacts*/
+.contacts-section {
+    position: relative;
+    width: 590px;
+    height: 550px;
+    background-color: white;
+    box-shadow: 0 0 20px lightgrey inset;
+    display: block;
+    top: 100px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+
+.contacts-section h2 {
+    color: #5FC6E3;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 50px 0 0 0;
+    text-align: center;
+    margin: 0;
+}
+
+.contacts-section p:before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    top: 67%;
+    left: -3%;
+    z-index: 1;
+    opacity: 0.3;
+    background: url('../img/top-pattern.png') 0 0 no-repeat;
+    background-size: contain;
+    -webkit-transform: rotate(175deg);
+    -moz-transform: rotate(175deg);
+    -ms-transform: rotate(175deg);
+    -o-transform: rotate(175deg);
+    transform: rotate(175deg);
+}
+
+.contacts-section p {
+    padding: 20px 20px 0 20px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #3B4157;
+}
+
+
+.contacts-section form {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.contacts-section input:focus, .contacts-section textarea:focus, .contacts-section input:hover,
+.contacts-section textarea:hover  {
+    border: 2px solid #3B4157; 
+}
+
+input:not(:placeholder-shown):invalid {
+    border: 2px solid red;
+}
+
+.contacts-section input {
+    margin: 7px 0 0 0;
+    padding: 0 0 0 20px;
+    width: 370px;
+    height: 35px;
+    border-radius: 0;
+    border: 1px solid #3B4157;
+    font-family: 'Playfair Display', serif;
+    font-style: Italic;
+    font-weight: 500;
+    color: #3B4157;
+    font-size: 14px;
+    box-sizing: border-box ;
+}
+
+.contacts-section input:last-child {
+    height: 35px;
+    width: 150px;
+    border: 0;
+    border-radius: 0;
+    background: #5FC6E3;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 7px 0 0 220px;
+    transition-duration: 1s;
+    padding: 0;
+}
+
+  .contacts-section input:last-child:hover {
+    background-color: #388196;
+   }
+
+
+.contacts-section textarea {
+    resize: none;
+    height: 140px;
+    width: 370px;
+    border: 1px solid #3B4157;
+    border-radius: 0;
+    margin: 7px 0 0 0;
+    padding: 0 0 0 20px;
+    font-family: 'Playfair Display', serif;
+    font-style: Italic;
+    color: #3B4157;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.contacts-section:before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: -6%;
+    left: 73%;
+    z-index: 1;
+    opacity: 0.3;
+    background: url('../img/top-pattern.png') 0 0 no-repeat;
+    background-size: contain;
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+
+/*Footer*/
+footer {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px lightgrey inset; 
+}
+
